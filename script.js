@@ -41,6 +41,7 @@ function randomNum(){
 function control(){
 
     result.textContent="running"
+    startElement.play()
     var myInterval=setInterval(randomNum,100);
     function pause(){
         clearInterval(myInterval)
