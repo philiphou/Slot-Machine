@@ -1,7 +1,7 @@
 
 //set variable elements//
 
-let reset=document.getElementById("reset")
+let start=document.getElementById("start")
 let end=document.getElementById("stop")
 let result=document.getElementById("board")
 var boxs=document.querySelectorAll(".box")
@@ -9,7 +9,8 @@ var total=document.getElementById("final")
 var anotherRun=document.getElementById("again")
 var winElement=new Audio('coin.wav')
 var looseElement=new Audio('Loose.mp3')
-var resetElement=new Audio('http://freesoundeffect.net/sites/default/files/game-music-phrase-h-v1-sound-effect-32815552.mp3')
+var resetElement=new Audio('reset.mp3')
+var startElement=new Audio('reset.mp3')
 
 
 var totalScore=0;
@@ -18,7 +19,7 @@ var totalScore=0;
 function randomNum(){
     
     for(var i=0; i<3; i++){
-        
+        startElement.play();
         let boxNum=Math.floor(Math.random()*3+1);
         boxs[i].innerHTML=boxNum;
         if(boxs[i].textContent==1){
@@ -38,6 +39,7 @@ function randomNum(){
 
 
 function control(){
+
     result.textContent="running"
     var myInterval=setInterval(randomNum,100);
     function pause(){
@@ -59,8 +61,9 @@ function outcome(){
     looseElement.play();
    } else{
     result.innerHTML="You Score 50"
-    totalScore+=50;
     winElement.play();
+    totalScore+=50;
+    
 }
    total.innerHTML="You Earn: "+totalScore
 
@@ -80,7 +83,7 @@ function another(){
 
 //Event Listeners//
 
-reset.addEventListener("click",control);
+start.addEventListener("click",control);
 end.addEventListener("click",outcome);
 anotherRun.addEventListener("click",another)
 
