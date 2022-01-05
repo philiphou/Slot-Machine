@@ -1,0 +1,83 @@
+
+.SlotMachine{
+    margin-top:200px;
+    margin-left: 400px;
+    border-style: solid; 
+    border-color: rgb(184, 169, 184);
+    border-radius: 10%;
+    border-width: 10px;
+    background-color: rgb(0, 247, 255);
+    width: 280px;
+    height: 300px;
+
+   
+}
+
+h2{
+    font-size:medium;
+    color: midnightblue;
+    text-align: center;
+}
+#board {
+    color: rgb(255, 0, 21);
+    text-align: center;
+}
+.container{
+    margin-top:10px;
+    display: flex;
+    justify-content:space-evenly;
+    width: 250px;
+    height:50px;
+   
+}
+
+.box{
+width:60px;
+height: 60px;
+background-color: black;
+font-size: xx-large;
+color:purple;
+text-align: center;
+align-items: center;
+}
+
+.foot{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    height:30px;
+  
+}
+button {
+    background-color: green;
+    color:white
+    
+    
+}
+#reset{
+    font-size: medium;
+}
+#stop{
+    background-color: red;
+    font-size: medium;
+}
+#final{
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 100px;
+    height:25px;
+    background-color:rgb(43, 55, 226);
+    font-size: medium;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: sandybrown;
+    color:white;
+    text-align: center;
+}
+#again{
+    background-color:purple;
+    margin-top: 15px;
+    margin-left: 100px;
+
+}
