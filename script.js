@@ -10,7 +10,7 @@ var anotherRun=document.getElementById("again")
 var winElement=new Audio('coin.wav')
 var looseElement=new Audio('Loose.mp3')
 var resetElement=new Audio('reset.mp3')
-var startElement=new Audio('reset.mp3')
+var startElement=new Audio('start.mp3')
 
 
 var totalScore=0;
