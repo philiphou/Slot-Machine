@@ -9,25 +9,34 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-<div class="SlotMachine">
-    <div class="top">
-        <h2>Welcome to Slot Machine</h2>
+    <div class="SlotMachine">
+        <div class="top">
+            <h2>Welcome to Slot Machine</h2>
+            
+            <div id="board">Good Luck!</div>
+        </div>
         
-        <div id="board">Good Luck!</div>
+        <div class="container">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+           
+         </div>
+        <div class="foot">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+        <div id="final">You Earn: </div>
+        <div><button id="again">Reset</button>
+        </div>
+        <div class="gameRule">
+            <h4>-----------------Game Rules-----------------</h4>
+            <ul type="none">
+                <li>AAA:Score 100</li>
+                <li>ABB, AAB, BBA: Score 50</li>
+                <li>ABC: Score 0</li>
+            </ul>
+        </div>
     </div>
-    
-    <div class="container">
-        <div class="box" id="box1"></div>
-        <div class="box" id="box2"></div>
-        <div class="box" id="box3"></div>
-       
-     </div>
-    <div class="foot">
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-    </div>
-    <div id="final">You Earn: </div>
-    <div><button id="again">Reset</button>
-</div>
 </body>
 </html>
