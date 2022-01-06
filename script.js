@@ -49,7 +49,8 @@ function control(){
     end.addEventListener("click",pause);
 }
 
-   
+  // if all the 3 numbers are the same, you earn/score 100; if 2 of the 3 numbers are the same, you 
+  // earn 50, and otherwise you earn 0 if all the 3 numbers are different from each other.//
 function outcome(){
     if(boxs[0].innerHTML==boxs[1].innerHTML&&boxs[0].innerHTML==boxs[2].innerHTML){
       result.innerHTML="You Score 100"
